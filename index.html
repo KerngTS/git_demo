@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kerng todo</title>
+  <title>马克待办</title>
   <style>
     body {
       max-width: 900px;
@@ -91,7 +91,7 @@
 </head>
 <body>
   <div class="app">
-    <h1>Kerng todo</h1>
+    <h1>马克待办</h1>
 
     <div class="input-row">
       <input id="todoInput" type="text" placeholder="输入一个待办事项">
@@ -120,7 +120,7 @@
     const exportButton = document.getElementById("exportButton");
 
     const todos = [
-      { text: "关注「Kerng work tree」", completed: false },
+      { text: "关注「马克的技术工作坊」", completed: false },
       { text: "给这期 Git 教程点赞", completed: true }
     ];
 
@@ -148,7 +148,7 @@
       const blob = new Blob([lines.join("\n")], { type: "text/plain" });
       const link = document.createElement("a");
       link.href = URL.createObjectURL(blob);
-      link.download = "Kerng todo.txt";
+      link.download = "马克待办.txt";
       link.click();
     }
 
